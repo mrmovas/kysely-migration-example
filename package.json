@@ -1,0 +1,24 @@
+{
+    "name": "ts-node-starter",
+    "version": "1.0.0",
+    "description": "A starter template for TypeScript projects using ts-node.",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc && tsc-alias",
+        "start": "node dist/index.js",
+        "typecheck": "tsc --noEmit",
+        "biome:format": "npx @biomejs/biome check --write ./src",
+        "biome:lint": "npx @biomejs/biome lint --write ./src",
+        "biome:check": "npx @biomejs/biome check ./src",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@biomejs/biome": "2.4.12",
+        "@types/node": "^25.6.0"
+    }
+}
