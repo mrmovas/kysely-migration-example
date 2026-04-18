@@ -1,7 +1,7 @@
 {
-    "name": "ts-node-starter",
+    "name": "kysely-migration-example",
     "version": "1.0.0",
-    "description": "A starter template for TypeScript projects using ts-node.",
+    "description": "An example of using Kysely migrations with TypeScript",
     "main": "dist/index.js",
     "scripts": {
         "migrate:up": "tsx watch src/index.ts up",
@@ -9,7 +9,7 @@
         "build": "tsc && tsc-alias",
         "start": "node dist/index.js",
         "typecheck": "tsc --noEmit",
-        "biome:format": "npx @biomejs/biome check --write ./src",
+        "biome:format": "npx @biomejs/biome format --write ./src",
         "biome:lint": "npx @biomejs/biome lint --write ./src",
         "biome:check": "npx @biomejs/biome check ./src",
         "test": "echo \"Error: no test specified\" && exit 1"
