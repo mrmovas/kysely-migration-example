@@ -23,20 +23,28 @@ Kysely runs migrations in **alphabetical order by filename**, so naming conventi
 
 1. Install dependencies:
 ```bash
-   npm install
+npm install
 ```
 
-2. Run migrations:
+2. Check migration status:
 ```bash
-   npm run migrate:up
+npm run migrate:history
 ```
 
-3. To roll back:
+3. Apply the next pending migration:
 ```bash
-   npm run migrate:down
+npm run migrate:up
 ```
 
-*(Adjust commands to match your actual scripts.)*
+4. Apply all pending migrations at once:
+```bash
+npm run migrate:upToLatest
+```
+
+5. Roll back the last migration:
+```bash
+npm run migrate:down
+```
 
 ## Further Reading
 

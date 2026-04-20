@@ -3,4 +3,5 @@ dist/
 build/
 
 .env
+test.db
 package-lock.json
